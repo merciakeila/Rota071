@@ -1,0 +1,43 @@
+
+body {
+    font-family: 'Poppins', ;
+}
+
+// Style
+
+@mixin h ($size) {
+    color: $black;
+    @if $size == 40 {       
+font-size: 40px;
+line-height: 25px;
+    }
+    @else if $size == 51 {
+        font-weight: 700;
+        font-size: 51px;
+        color: $white;
+    }
+
+    @else if $size == 51 {
+        font-weight: 700;
+        font-size: 51px;
+        color: $black;
+    }
+}
+
+@mixin others ($size) { 
+    color: $black-clean;
+  @if $size == 40 {       
+font-size: 40px;
+font-weight: 300;
+    line-height: 58px;
+color: $white;
+    }
+}
+
+
+
+
+h5 {
+    @include h(51);
+}
+
